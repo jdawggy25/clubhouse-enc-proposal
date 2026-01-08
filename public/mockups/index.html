@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{CLIENT_NAME}} | {{CLIENT_TAGLINE}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Oswald:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="loading">
+
+    <!-- Preloader -->
+    <div class="loader">
+        <div class="loader-text">{{CLIENT_NAME}}</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Cursor custom -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <button class="mode-toggle" id="modeToggle" title="Toggle Light/Dark Mode">
+            <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <line x1="12" y1="1" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="23"></line>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                <line x1="1" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="23" y2="12"></line>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+        </button>
+        <div class="theme-divider"></div>
+        <span class="theme-label">Accent</span>
+        <button class="theme-btn active" data-theme="blue" title="Professional Blue"></button>
+        <button class="theme-btn" data-theme="copper" title="Copper"></button>
+        <button class="theme-btn" data-theme="lime" title="Neon Lime"></button>
+        <button class="theme-btn" data-theme="white" title="Pure White"></button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="/placeholders/client-logo.svg" alt="{{CLIENT_NAME}}"
+                    style="height: 32px; width: auto;">
+            </a>
+
+            <div class="nav-links">
+                <a href="#philosophy" class="nav-link">Philosophy</a>
+                <a href="#testimonials" class="nav-link">Testimonials</a>
+                <a href="#pillars" class="nav-link">The Pillars</a>
+                <a href="#services" class="nav-link">Services</a>
+            </div>
+
+            <div class="nav-actions">
+                <a href="#" class="btn btn-outline">Client Login</a>
+                <a href="#" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-bg">
+                <img src="/placeholders/hero-bg.svg"
+                    alt="{{CLIENT_NAME}}" class="parallax-img">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="hero-content">
+                <span class="hero-label reveal-text">{{CLIENT_CITY}}'s Premier {{CLIENT_INDUSTRY}} Destination</span>
+                <h1 class="hero-title split-text-container">
+                    <div class="mask-wrap">
+                        <div class="reveal-up split-text" data-split>{{HERO_LINE_1}}</div>
+                    </div>
+                    <div class="mask-wrap">
+                        <div class="reveal-up delay-1 split-text" data-split>{{HERO_LINE_2}}</div>
+                    </div>
+                </h1>
+                <p class="hero-sub reveal-text delay-2">
+                    {{CLIENT_DESCRIPTION}}
+                </p>
+                <div class="hero-btns reveal-text delay-3">
+                    <a href="#" class="btn btn-primary">{{CTA_PRIMARY}}</a>
+                    <a href="#pillars" class="btn btn-outline">{{CTA_SECONDARY}}</a>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator reveal-text delay-4">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Logo Bar - Partners -->
+        <section class="logo-bar">
+            <div class="logo-bar-inner">
+                <div class="logo-bar-content">
+                    <span class="logo-bar-label">Trusted By</span>
+                    <div class="logo-item" data-brand="partner1">
+                        <img src="/placeholders/partner-1.svg" alt="Partner 1">
+                    </div>
+                    <div class="logo-item" data-brand="partner2">
+                        <img src="/placeholders/partner-2.svg" alt="Partner 2">
+                    </div>
+                    <div class="logo-item" data-brand="partner3">
+                        <img src="/placeholders/partner-3.svg" alt="Partner 3">
+                    </div>
+                    <div class="logo-item" data-brand="partner4">
+                        <img src="/placeholders/partner-4.svg" alt="Partner 4">
+                    </div>
+                    <div class="logo-item" data-brand="partner5">
+                        <img src="/placeholders/partner-5.svg" alt="Partner 5">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof Marquee -->
+        <div class="marquee-section">
+            <div class="marquee-content">
+                <span>Trusted by Leaders</span>
+                <span class="separator">-</span>
+                <span>{{TESTIMONIAL_1_NAME}}</span>
+                <span class="separator">-</span>
+                <span>{{TESTIMONIAL_2_NAME}}</span>
+                <span class="separator">-</span>
+                <span>{{TESTIMONIAL_3_NAME}}</span>
+                <span class="separator">-</span>
+                <span>{{TESTIMONIAL_4_NAME}}</span>
+                <span class="separator">-</span>
+                <span>{{CLIENT_SLOGAN}}</span>
+                <span class="separator">-</span>
+            </div>
+        </div>
+
+        <!-- Big Stats Section -->
+        <section class="stats-section" data-scroll>
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item" data-scroll>
+                        <span class="stat-number" data-count="{{STAT_1_COUNT}}">0</span>
+                        <span class="stat-suffix">{{STAT_1_SUFFIX}}</span>
+                        <span class="stat-label">{{STAT_1_LABEL}}</span>
+                    </div>
+                    <div class="stat-item" data-scroll>
+                        <span class="stat-number" data-count="{{STAT_2_COUNT}}">0</span>
+                        <span class="stat-suffix">{{STAT_2_SUFFIX}}</span>
+                        <span class="stat-label">{{STAT_2_LABEL}}</span>
+                    </div>
+                    <div class="stat-item" data-scroll>
+                        <span class="stat-number" data-count="{{STAT_3_COUNT}}">0</span>
+                        <span class="stat-suffix">{{STAT_3_SUFFIX}}</span>
+                        <span class="stat-label">{{STAT_3_LABEL}}</span>
+                    </div>
+                    <div class="stat-item" data-scroll>
+                        <span class="stat-number" data-count="{{STAT_4_COUNT}}">0</span>
+                        <span class="stat-suffix">{{STAT_4_SUFFIX}}</span>
+                        <span class="stat-label">{{STAT_4_LABEL}}</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy / Intro -->
+        <section class="philosophy section-spacing" id="philosophy" data-scroll>
+            <div class="container text-center">
+                <span class="section-tag">Our Philosophy</span>
+                <h2 class="section-heading-xl stroke-text">{{PHILOSOPHY_LINE_1}}<br>{{PHILOSOPHY_LINE_2}}<br>{{PHILOSOPHY_LINE_3}}</h2>
+                <div class="text-block" data-scroll>
+                    <p>
+                        {{PHILOSOPHY_DESCRIPTION}}
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section - Grid -->
+        <section class="athletes-section section-spacing" id="testimonials">
+            <div class="container">
+                <div class="section-header" data-scroll>
+                    <span class="section-tag">Who We Serve</span>
+                    <h2 class="section-heading">{{TESTIMONIALS_HEADING}}</h2>
+                    <p class="section-sub">{{TESTIMONIALS_SUBHEADING}}</p>
+                </div>
+
+                <div class="athletes-grid">
+                    <div class="athlete-card" data-scroll>
+                        <div class="athlete-image">
+                            <img src="/placeholders/testimonial-1.svg"
+                                alt="{{TESTIMONIAL_1_NAME}}">
+                        </div>
+                        <div class="athlete-info">
+                            <h3>{{TESTIMONIAL_1_NAME}}</h3>
+                            <span>{{TESTIMONIAL_1_TITLE}}</span>
+                        </div>
+                    </div>
+
+                    <div class="athlete-card" data-scroll>
+                        <div class="athlete-image">
+                            <img src="/placeholders/testimonial-2.svg"
+                                alt="{{TESTIMONIAL_2_NAME}}">
+                        </div>
+                        <div class="athlete-info">
+                            <h3>{{TESTIMONIAL_2_NAME}}</h3>
+                            <span>{{TESTIMONIAL_2_TITLE}}</span>
+                        </div>
+                    </div>
+
+                    <div class="athlete-card" data-scroll>
+                        <div class="athlete-image">
+                            <img src="/placeholders/testimonial-3.svg"
+                                alt="{{TESTIMONIAL_3_NAME}}">
+                        </div>
+                        <div class="athlete-info">
+                            <h3>{{TESTIMONIAL_3_NAME}}</h3>
+                            <span>{{TESTIMONIAL_3_TITLE}}</span>
+                        </div>
+                    </div>
+
+                    <div class="athlete-card" data-scroll>
+                        <div class="athlete-image">
+                            <img src="/placeholders/testimonial-4.svg"
+                                alt="{{TESTIMONIAL_4_NAME}}">
+                        </div>
+                        <div class="athlete-info">
+                            <h3>{{TESTIMONIAL_4_NAME}}</h3>
+                            <span>{{TESTIMONIAL_4_TITLE}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Image Strip -->
+        <section class="parallax-strip" data-scroll>
+            <img src="/placeholders/service-1.svg"
+                 alt="{{CLIENT_NAME}}" class="parallax-strip-img">
+            <div class="parallax-strip-overlay"></div>
+            <div class="parallax-strip-content">
+                <h3>{{PARALLAX_1_HEADING}}</h3>
+                <p>{{PARALLAX_1_TEXT}}</p>
+            </div>
+        </section>
+
+        <!-- Three Pillars (Horizontal Cards) -->
+        <section class="pillars-section" id="pillars" data-scroll>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">The Foundation</span>
+                    <h2 class="section-heading">{{PILLARS_HEADING}}</h2>
+                    <p class="section-sub">{{PILLARS_SUBHEADING}}</p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card glass-card" data-scroll>
+                        <div class="pillar-bg"
+                            style="background-image: url('/placeholders/service-2.svg');">
+                        </div>
+                        <div class="pillar-content">
+                            <div class="pillar-number">01</div>
+                            <h3>{{PILLAR_1_TITLE}}</h3>
+                            <p>{{PILLAR_1_DESC}}</p>
+                            <a href="#" class="btn btn-outline">{{PILLAR_1_CTA}}</a>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card glass-card" data-scroll>
+                        <div class="pillar-bg"
+                            style="background-image: url('/placeholders/service-3.svg');">
+                        </div>
+                        <div class="pillar-content">
+                            <div class="pillar-number">02</div>
+                            <h3>{{PILLAR_2_TITLE}}</h3>
+                            <p>{{PILLAR_2_DESC}}</p>
+                            <a href="#" class="btn btn-outline">{{PILLAR_2_CTA}}</a>
+                        </div>
+                    </div>
+
+                    <div class="pillar-card glass-card" data-scroll>
+                        <div class="pillar-bg"
+                            style="background-image: url('/placeholders/service-4.svg');">
+                        </div>
+                        <div class="pillar-content">
+                            <div class="pillar-number">03</div>
+                            <h3>{{PILLAR_3_TITLE}}</h3>
+                            <p>{{PILLAR_3_DESC}}</p>
+                            <a href="#" class="btn btn-outline">{{PILLAR_3_CTA}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services (Bento Grid) -->
+        <section class="services section-spacing" id="services" data-scroll>
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">What We Offer</span>
+                    <h2 class="section-heading">{{SERVICES_HEADING}}</h2>
+                    <p class="section-sub">{{SERVICES_SUBHEADING}}</p>
+                </div>
+
+                <div class="bento-grid">
+                    <div class="bento-item large glass-card" data-scroll>
+                        <img src="/placeholders/service-1.svg"
+                            alt="{{SERVICE_1_NAME}}">
+                        <div class="bento-content">
+                            <span class="bento-tag">{{SERVICE_1_TAG}}</span>
+                            <h3>{{SERVICE_1_NAME}}</h3>
+                            <p>{{SERVICE_1_DESC}}</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item small glass-card" data-scroll>
+                        <img src="/placeholders/service-2.svg"
+                            alt="{{SERVICE_2_NAME}}">
+                        <div class="bento-content">
+                            <h3>{{SERVICE_2_NAME}}</h3>
+                            <p>{{SERVICE_2_DESC}}</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item tall glass-card" data-scroll>
+                        <img src="/placeholders/service-3.svg"
+                            alt="{{SERVICE_3_NAME}}">
+                        <div class="bento-content">
+                            <h3>{{SERVICE_3_NAME}}</h3>
+                            <p>{{SERVICE_3_DESC}}</p>
+                        </div>
+                    </div>
+
+                    <div class="bento-item medium glass-card" data-scroll>
+                        <img src="/placeholders/service-4.svg"
+                            alt="{{SERVICE_4_NAME}}">
+                        <div class="bento-content">
+                            <h3>{{SERVICE_4_NAME}}</h3>
+                            <p>{{SERVICE_4_DESC}}</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="services-cta text-center" data-scroll>
+                    <a href="#" class="btn btn-primary btn-lg">View All Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Locations Section -->
+        <section class="locations-section" data-scroll>
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-tag">Find Us</span>
+                    <h2 class="section-heading">{{LOCATION_COUNT}} {{CLIENT_CITY}} Locations</h2>
+                </div>
+
+                <div class="locations-grid">
+                    <div class="location-card glass-card" data-scroll>
+                        <div class="location-image">
+                            <img src="/placeholders/location-1.svg"
+                                alt="{{LOCATION_1_NAME}}">
+                        </div>
+                        <div class="location-content">
+                            <h3>{{LOCATION_1_NAME}}</h3>
+                            <p>{{LOCATION_1_ADDRESS}}<br>{{LOCATION_1_CITY}}</p>
+                            <a href="#" class="btn btn-outline">Book Here</a>
+                        </div>
+                    </div>
+
+                    <div class="location-card glass-card" data-scroll>
+                        <div class="location-image">
+                            <img src="/placeholders/location-2.svg"
+                                alt="{{LOCATION_2_NAME}}">
+                        </div>
+                        <div class="location-content">
+                            <h3>{{LOCATION_2_NAME}}</h3>
+                            <p>{{LOCATION_2_ADDRESS}}<br>{{LOCATION_2_CITY}}</p>
+                            <a href="#" class="btn btn-outline">Book Here</a>
+                        </div>
+                    </div>
+
+                    <div class="location-card glass-card" data-scroll>
+                        <div class="location-image">
+                            <img src="/placeholders/location-3.svg"
+                                alt="{{LOCATION_3_NAME}}">
+                        </div>
+                        <div class="location-content">
+                            <h3>{{LOCATION_3_NAME}}</h3>
+                            <p>{{LOCATION_3_ADDRESS}}<br>{{LOCATION_3_CITY}}</p>
+                            <a href="#" class="btn btn-outline">Book Here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Parallax Image Strip 2 -->
+        <section class="parallax-strip" data-scroll>
+            <img src="/placeholders/service-2.svg"
+                 alt="{{CLIENT_NAME}}" class="parallax-strip-img">
+            <div class="parallax-strip-overlay"></div>
+            <div class="parallax-strip-content">
+                <h3>{{PARALLAX_2_HEADING}}</h3>
+                <p>{{PARALLAX_2_TEXT}}</p>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-bg">
+                <img src="/placeholders/hero-bg.svg"
+                     alt="{{CLIENT_NAME}}" class="cta-bg-img">
+            </div>
+            <div class="container text-center">
+                <span class="section-tag reveal-text">{{CTA_TAG}}</span>
+                <h2 class="cta-title" data-scroll>{{CTA_HEADLINE}}</h2>
+                <p class="cta-text" data-scroll>{{CTA_SUBHEADLINE}}</p>
+                <div class="cta-actions" data-scroll>
+                    <a href="#" class="btn btn-white btn-lg">{{CTA_PRIMARY}}</a>
+                    <a href="#" class="btn btn-outline-white btn-lg">{{CTA_SECONDARY}}</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <img src="/placeholders/client-logo.svg"
+                            alt="{{CLIENT_NAME}}" style="height: 40px; width: auto; margin-bottom: 24px;">
+                        <p>{{CLIENT_CITY}}'s premier {{CLIENT_INDUSTRY}} destination<br>for discerning clients.</p>
+                    </div>
+                    <div class="footer-links">
+                        <div class="col">
+                            <h4>Menu</h4>
+                            <a href="#">Services</a>
+                            <a href="#">Membership</a>
+                            <a href="#">Locations</a>
+                            <a href="#">About</a>
+                        </div>
+                        <div class="col">
+                            <h4>Services</h4>
+                            <a href="#">{{SERVICE_1_NAME}}</a>
+                            <a href="#">{{SERVICE_2_NAME}}</a>
+                            <a href="#">{{SERVICE_3_NAME}}</a>
+                            <a href="#">{{SERVICE_4_NAME}}</a>
+                        </div>
+                        <div class="col">
+                            <h4>Connect</h4>
+                            <a href="#">Instagram</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">LinkedIn</a>
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2025 {{CLIENT_NAME}}. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
