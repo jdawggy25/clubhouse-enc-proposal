@@ -16,11 +16,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Note: For dynamic metadata based on config, convert to generateMetadata()
-// For now, using template tokens as placeholders
 export const metadata: Metadata = {
-  title: "{{CLIENT_NAME}} x ComCreate | Premium Web Development Proposal",
-  description: "A comprehensive proposal for {{CLIENT_NAME}}'s premium website and {{INTEGRATION_NAME}} integration.",
+  title: "Club House ENC x ComCreate | Website Redesign + SEO Proposal",
+  description: "A comprehensive proposal for Club House ENC's premium website redesign and SEO optimization.",
+  openGraph: {
+    title: "Club House ENC x ComCreate | Website Redesign + SEO Proposal",
+    description: "A comprehensive proposal for Club House ENC's premium website redesign and SEO optimization.",
+    siteName: "ComCreate",
+  },
 };
 
 export default function RootLayout({

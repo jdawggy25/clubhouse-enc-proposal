@@ -61,25 +61,16 @@ export const Navbar = () => {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden md:flex items-center gap-8">
-                        <div className="flex items-center gap-6 text-sm">
-                            {navItems.map((item) => (
-                                <button
-                                    key={item.href}
-                                    onClick={() => handleNavClick(item.href)}
-                                    className="font-medium text-zinc-400 hover:text-white transition-colors"
-                                >
-                                    {item.label}
-                                </button>
-                            ))}
-                        </div>
-                        <Link
-                            href="/mockups/index.html"
-                            target="_blank"
-                            className="px-6 py-2 bg-primary text-white text-sm font-semibold rounded-full hover:bg-primary/90 transition-all hover:scale-105"
-                        >
-                            View Mockups
-                        </Link>
+                    <div className="hidden md:flex items-center gap-6 text-sm">
+                        {navItems.map((item) => (
+                            <button
+                                key={item.href}
+                                onClick={() => handleNavClick(item.href)}
+                                className="font-medium text-zinc-400 hover:text-white transition-colors"
+                            >
+                                {item.label}
+                            </button>
+                        ))}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -146,22 +137,6 @@ export const Navbar = () => {
                                 </button>
                             ))}
 
-                            <motion.div
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: 0.25, duration: 0.3 }}
-                                className="mt-8 flex flex-col items-center gap-4"
-                            >
-                                <div className="w-12 h-1 bg-white/10 rounded-full" />
-                                <Link
-                                    href="/mockups/index.html"
-                                    target="_blank"
-                                    onClick={() => setIsOpen(false)}
-                                    className="px-8 py-3 bg-white text-black text-lg font-bold rounded-full hover:bg-zinc-200 transition-all hover:scale-105 inline-block"
-                                >
-                                    View Mockups
-                                </Link>
-                            </motion.div>
                         </div>
 
                         <motion.div
