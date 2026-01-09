@@ -24,7 +24,7 @@ export const Investment = () => {
                 <SectionHeading
                     tag="Investment"
                     title="Your Investment"
-                    subtitle={`A complete digital transformation for ${config.client.name} - custom website and seamless ${config.integration.name} integration.`}
+                    subtitle={`A complete digital transformation for ${config.client.name} - custom website redesign with comprehensive SEO optimization.`}
                 />
 
                 {/* Price Display */}
@@ -51,12 +51,7 @@ export const Investment = () => {
                     <div className="grid md:grid-cols-2 gap-6">
                         {/* Website Features */}
                         <div className="bento-card border-primary/30">
-                            <div className="text-center mb-6">
-                                <h3 className="text-xl font-bold text-white mb-2">Premium Website</h3>
-                                <div className="text-3xl font-hero text-primary">
-                                    {formatPrice(pricingConfig.price / 2)}
-                                </div>
-                            </div>
+                            <h3 className="text-xl font-bold text-white mb-6 text-center">Premium Website</h3>
                             <div className="space-y-3">
                                 {pricingConfig.websiteFeatures.map((feature) => (
                                     <FeatureItem key={feature} feature={feature} />
@@ -64,14 +59,9 @@ export const Investment = () => {
                             </div>
                         </div>
 
-                        {/* Integration Features */}
+                        {/* SEO Optimization Features */}
                         <div className="bento-card border-primary/30">
-                            <div className="text-center mb-6">
-                                <h3 className="text-xl font-bold text-white mb-2">{config.integration.name} Integration</h3>
-                                <div className="text-3xl font-hero text-primary">
-                                    {formatPrice(pricingConfig.price / 2)}
-                                </div>
-                            </div>
+                            <h3 className="text-xl font-bold text-white mb-6 text-center">SEO Optimization</h3>
                             <div className="space-y-3">
                                 {pricingConfig.integrationFeatures.map((feature) => (
                                     <FeatureItem key={feature} feature={feature} />

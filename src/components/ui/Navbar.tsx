@@ -9,7 +9,6 @@ import Image from "next/image"
 const navItems = [
     { label: 'Proposal', href: '#proposal' },
     { label: 'Solution', href: '#solution' },
-    { label: 'Deliverables', href: '#deliverables' },
     { label: 'Investment', href: '#investment' },
 ]
 

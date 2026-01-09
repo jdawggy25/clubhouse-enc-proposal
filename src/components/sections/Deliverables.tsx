@@ -2,7 +2,6 @@
 
 import { SectionHeading } from "../ui/SectionHeading"
 import { Check } from "lucide-react"
-import { config } from "@/config/template.config"
 
 interface Deliverable {
     name: string
@@ -16,27 +15,27 @@ const websiteDeliverables: Deliverable[] = [
     },
     {
         name: "Premium Homepage",
-        description: "Hero, services, locations, CTAs",
+        description: "Hero, services, about, CTAs",
     },
     {
         name: "Service Pages",
-        description: "Detailed modality pages",
+        description: "Recovery & movement class pages",
     },
     {
-        name: "Multi-Location Support",
-        description: "All client locations",
+        name: "About & Contact Pages",
+        description: "Story, team, location info",
     },
     {
         name: "Premium Animations",
         description: "Framer Motion interactions",
     },
     {
-        name: "LLM SEO Optimization",
-        description: "Structured data, AI-ready content",
+        name: "Mobile-First Design",
+        description: "Optimized for all devices",
     },
     {
-        name: "Mobile Responsive",
-        description: "Optimized for all devices",
+        name: "Fast Load Times",
+        description: "Sub-2 second page loads",
     },
     {
         name: "Vercel Deployment",
@@ -44,30 +43,30 @@ const websiteDeliverables: Deliverable[] = [
     },
 ]
 
-const integrationDeliverables: Deliverable[] = [
+const seoDeliverables: Deliverable[] = [
     {
-        name: `${config.integration.name} API Connection`,
-        description: "Secure server-side integration",
+        name: "Local SEO Setup",
+        description: "Encinitas-focused optimization",
     },
     {
-        name: "Custom Booking Flows",
-        description: "On-site scheduling experience",
+        name: "Google Business Profile",
+        description: "Optimized GBP listing",
     },
     {
-        name: "Real-Time Availability",
-        description: "Live schedule sync",
+        name: "Schema Markup",
+        description: "LocalBusiness & fitness structured data",
     },
     {
-        name: "Member Portal",
-        description: "Login, dashboard, history",
+        name: "Keyword Optimization",
+        description: "Recovery, fitness, Encinitas terms",
     },
     {
-        name: "Package Purchases",
-        description: "Buy memberships on-site",
+        name: "Meta Tags & Open Graph",
+        description: "Social sharing optimization",
     },
     {
-        name: "Webhook Notifications",
-        description: "Real-time event updates",
+        name: "Technical SEO",
+        description: "Sitemap, robots.txt, canonicals",
     },
 ]
 
@@ -78,7 +77,7 @@ const qualityDeliverables: Deliverable[] = [
     },
     {
         name: "Security Best Practices",
-        description: "HTTPS, secure API proxy",
+        description: "HTTPS, security headers",
     },
     {
         name: "Accessibility",
@@ -125,8 +124,8 @@ export const Deliverables = () => {
 
                 <div className="max-w-4xl mx-auto">
                     <div className="grid md:grid-cols-2 gap-6 mb-6">
-                        <DeliverableSection deliverables={websiteDeliverables} title="Website Development" />
-                        <DeliverableSection deliverables={integrationDeliverables} title={`${config.integration.name} Integration`} />
+                        <DeliverableSection deliverables={websiteDeliverables} title="Website Redesign" />
+                        <DeliverableSection deliverables={seoDeliverables} title="SEO Optimization" />
                     </div>
                     <DeliverableSection deliverables={qualityDeliverables} title="Quality & Standards" />
                 </div>

@@ -2,6 +2,15 @@
 
 import { SectionHeading } from "../ui/SectionHeading"
 import { config } from "@/config/template.config"
+import { TrendingDown, Search, Link2, Globe, ExternalLink } from "lucide-react"
+
+const ahrefsStats = [
+    { value: "0", label: "Domain Rating", icon: Globe, status: "critical" },
+    { value: "0", label: "Organic Keywords", icon: Search, status: "critical" },
+    { value: "0", label: "Monthly Traffic", icon: TrendingDown, status: "critical" },
+    { value: "0", label: "Live Backlinks", icon: Link2, status: "critical" },
+    { value: "29", label: "Lost Referring Domains", icon: ExternalLink, status: "warning" },
+]
 
 export const AboutClient = () => {
     return (
@@ -13,18 +22,40 @@ export const AboutClient = () => {
                     subtitle={config.client.description}
                 />
 
-                {/* Stats Grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-                    {config.stats.map((stat) => (
-                        <div
-                            key={stat.label}
-                            className="bento-card text-center"
-                        >
-                            <stat.icon className="w-6 h-6 text-primary mx-auto mb-3" />
-                            <div className="text-3xl md:text-4xl font-hero text-white mb-1">{stat.value}</div>
-                            <div className="text-sm text-zinc-500">{stat.label}</div>
+                {/* Ahrefs Stats Section */}
+                <div className="max-w-4xl mx-auto mb-16">
+                    <div className="bento-card border-red-500/20 bg-red-500/5">
+                        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+                            <div>
+                                <h3 className="text-lg sm:text-xl font-bold text-white">Current SEO Performance</h3>
+                                <p className="text-xs sm:text-sm text-zinc-500">Data from Ahrefs - January 2025</p>
+                            </div>
+                            <div className="px-3 py-1 rounded-full bg-red-500/20 text-red-400 text-xs font-bold w-fit">
+                                Needs Attention
+                            </div>
                         </div>
-                    ))}
+                        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                            {ahrefsStats.map((stat) => (
+                                <div
+                                    key={stat.label}
+                                    className="text-center p-4 rounded-xl bg-black/20"
+                                >
+                                    <stat.icon className={`w-5 h-5 mx-auto mb-2 ${
+                                        stat.status === 'critical' ? 'text-red-400' : 'text-amber-400'
+                                    }`} />
+                                    <div className={`text-2xl md:text-3xl font-hero mb-1 ${
+                                        stat.status === 'critical' ? 'text-red-400' : 'text-amber-400'
+                                    }`}>
+                                        {stat.value}
+                                    </div>
+                                    <div className="text-xs text-zinc-500">{stat.label}</div>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-sm text-zinc-400 mt-4 text-center">
+                            Zero organic visibility means potential customers searching for recovery studios in Encinitas can&apos;t find you.
+                        </p>
+                    </div>
                 </div>
 
                 {/* Key Insights */}

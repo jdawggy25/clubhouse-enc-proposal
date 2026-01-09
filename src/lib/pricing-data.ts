@@ -1,8 +1,7 @@
 // ============================================================================
-// PRICING CONFIGURATION
+// PRICING CONFIGURATION - Club House ENC
 // ============================================================================
-// Customize the pricing for each client proposal.
-// Replace {{PRICE}} with the actual project price.
+// Website Redesign + SEO Optimization - $7,500
 // ============================================================================
 
 export interface PricingConfig {
@@ -15,32 +14,32 @@ export interface PricingConfig {
 
 export const pricingConfig: PricingConfig = {
     // -------------------------------------------------------------------------
-    // PRICING - {{PRICE}} - Replace with actual project price
+    // PRICING - $7,500
     // -------------------------------------------------------------------------
-    price: 0, // TODO: Set project price (e.g., 15000)
+    price: 7500,
 
     // -------------------------------------------------------------------------
-    // WEBSITE FEATURES
+    // WEBSITE REDESIGN FEATURES
     // -------------------------------------------------------------------------
     websiteFeatures: [
         "Custom coded design (no templates)",
-        "Multi-location support",
-        "Mobile responsive",
-        "LLM SEO optimization",
+        "Mobile-first responsive design",
         "Premium Framer Motion animations",
-        "Vercel deployment",
+        "Fast load times & Core Web Vitals",
+        "Modern UI/UX design",
+        "Vercel edge deployment",
     ],
 
     // -------------------------------------------------------------------------
-    // INTEGRATION FEATURES
+    // SEO OPTIMIZATION FEATURES
     // -------------------------------------------------------------------------
     integrationFeatures: [
-        "Secure API proxy layer",
-        "Custom booking flows",
-        "Member portal & dashboard",
-        "Real-time scheduling",
-        "Package purchase flows",
-        "Webhook notifications",
+        "Local SEO optimization (Encinitas)",
+        "Google Business Profile optimization",
+        "Schema markup for rich results",
+        "Keyword-optimized content structure",
+        "Meta tags & Open Graph setup",
+        "XML sitemap & robots.txt",
     ],
 
     // -------------------------------------------------------------------------
@@ -48,17 +47,17 @@ export const pricingConfig: PricingConfig = {
     // -------------------------------------------------------------------------
     qualityFeatures: [
         "Performance optimized (Core Web Vitals)",
-        "Security best practices",
+        "Security best practices (HTTPS, headers)",
         "WCAG 2.1 AA accessibility",
         "Contact forms with notifications",
     ],
 
     // -------------------------------------------------------------------------
-    // PAYMENT TERMS
+    // PAYMENT TERMS - 50% Upfront, 50% on Completion
     // -------------------------------------------------------------------------
     paymentSplit: {
-        upfront: 50,    // Percentage due upfront
-        completion: 50, // Percentage due on completion
+        upfront: 50,    // $3,750 due upfront
+        completion: 50, // $3,750 due on completion
     },
 }
 

@@ -25,8 +25,8 @@ export const Footer = () => {
                         <Link href="https://comcreate.org" target="_blank" className="hover:text-white transition-colors">
                             comcreate.org
                         </Link>
-                        <a href="mailto:hayden@comcreate.org" className="hover:text-white transition-colors">
-                            hayden@comcreate.org
+                        <a href="mailto:josh@comcreate.org" className="hover:text-white transition-colors">
+                            josh@comcreate.org
                         </a>
                     </div>
 

@@ -5,35 +5,35 @@ import { Palette, Code, Rocket, Check } from "lucide-react"
 
 const phases = [
     {
-        week: "Week 1",
+        week: "Weeks 1-2",
         title: "Discovery & Design",
         icon: Palette,
         items: [
             "Brand asset collection",
-            "Design mockups approval",
-            "MindBody API setup",
-            "Architecture finalization"
+            "Design mockups & approval",
+            "Content strategy planning",
+            "Keyword research finalization"
         ]
     },
     {
-        week: "Week 2",
+        week: "Weeks 3-4",
         title: "Development",
         icon: Code,
         items: [
-            "Frontend implementation",
-            "CRM integration",
-            "Booking flow development",
-            "Member portal setup"
+            "Next.js site build",
+            "SEO-optimized content",
+            "Schema markup implementation",
+            "Mobile responsive design"
         ]
     },
     {
-        week: "Week 3",
-        title: "Testing & Launch",
+        week: "Weeks 5-6",
+        title: "SEO & Launch",
         icon: Rocket,
         items: [
-            "Quality assurance",
-            "Performance optimization",
-            "SEO implementation",
+            "Google Business optimization",
+            "Core Web Vitals tuning",
+            "Analytics & tracking setup",
             "Production deployment"
         ]
     }
@@ -50,8 +50,8 @@ export const ProjectPhases = () => {
             <div className="container px-4 mx-auto relative z-10">
                 <SectionHeading
                     tag="The Plan"
-                    title="3-Week Development Timeline"
-                    subtitle="A focused, efficient timeline to deliver your premium digital platform."
+                    title="6-Week Development Timeline"
+                    subtitle="A thorough timeline to deliver your premium website with comprehensive SEO optimization."
                 />
 
                 <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">

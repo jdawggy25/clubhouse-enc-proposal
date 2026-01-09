@@ -6,18 +6,18 @@ import { Code, Search, Shield, Zap, AlertTriangle } from "lucide-react"
 const problems = [
     {
         icon: AlertTriangle,
-        title: "React SPA = Poor SEO",
-        description: "Single Page Applications make it nearly impossible for Google to crawl and index your pages properly."
+        title: "Zero Search Visibility",
+        description: "Domain Rating of 0 and zero organic keywords mean Club House ENC is invisible to searchers."
     },
     {
         icon: AlertTriangle,
-        title: "Blurry Images & Missing Content",
-        description: "Current website has broken images, missing service photos, and non-functional cart features."
+        title: "Missing Local SEO",
+        description: "When people search 'recovery studio Encinitas' or 'movement classes near me', you don't appear."
     },
     {
         icon: AlertTriangle,
-        title: "No Organic Traffic",
-        description: "Zero search rankings means you're invisible when people search \"recovery center near me.\""
+        title: "Lost Referral Links",
+        description: "29 historical backlinks are no longer active—lost opportunity for domain authority."
     }
 ]
 
@@ -56,8 +56,8 @@ export const WhyCustom = () => {
             <div className="container px-4 mx-auto relative z-10">
                 <SectionHeading
                     tag="The Problem"
-                    title="Why Custom Development Matters"
-                    subtitle="Your current website isn't ready for traffic. Here's why we're building from scratch."
+                    title="Why Club House ENC Needs This"
+                    subtitle="Based on Ahrefs data, here's what's holding back your online presence—and how we'll fix it."
                 />
 
                 {/* Current Problems */}

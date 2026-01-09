@@ -1,10 +1,9 @@
-import { Users, MapPin, Activity, Trophy, Heart, Sparkles, TrendingUp, type LucideIcon } from "lucide-react"
+import { Users, MapPin, Activity, Trophy, Heart, Sparkles, TrendingUp, Search, type LucideIcon } from "lucide-react"
 
 // ============================================================================
-// TEMPLATE CONFIGURATION
+// TEMPLATE CONFIGURATION - Club House ENC
 // ============================================================================
-// Replace all {{TOKEN}} values with your client's information.
-// This is the central configuration file for customizing the proposal.
+// Website Redesign + SEO Optimization Proposal
 // ============================================================================
 
 export interface StatConfig {
@@ -80,32 +79,32 @@ export const config: TemplateConfig = {
     // CLIENT IDENTITY
     // -------------------------------------------------------------------------
     client: {
-        name: "{{CLIENT_NAME}}",
-        tagline: "{{CLIENT_TAGLINE}}",
-        description: "{{CLIENT_DESCRIPTION}}",
+        name: "Club House ENC",
+        tagline: "Recovery ain't easy. Together we thrive.",
+        description: "A space designed for those who strive for more—physically, mentally, all while connecting with community. Club House ENC offers recovery and movement classes in the heart of Encinitas.",
         logo: "/placeholders/client-logo.svg",
-        industry: "{{CLIENT_INDUSTRY}}",
-        city: "{{CLIENT_CITY}}",
-        website: "{{CLIENT_WEBSITE}}",
+        industry: "Fitness & Recovery",
+        city: "Encinitas",
+        website: "clubhouse-enc.com",
     },
 
     // -------------------------------------------------------------------------
     // HERO SECTION
     // -------------------------------------------------------------------------
     hero: {
-        headline: "{{HERO_HEADLINE}}",
-        subheadline: "{{HERO_SUBHEADLINE}}",
-        label: "{{CLIENT_CITY}}'s Premier {{CLIENT_INDUSTRY}} Destination",
+        headline: "A Modern Website for Modern Recovery",
+        subheadline: "Transform your digital presence with a high-performance website and SEO strategy that puts Club House ENC on the map.",
+        label: "Encinitas' Premier Recovery & Movement Studio",
     },
 
     // -------------------------------------------------------------------------
-    // STATISTICS (shown in AboutClient section)
+    // STATISTICS - SEO OPPORTUNITY DATA
     // -------------------------------------------------------------------------
     stats: [
-        { value: "{{STAT_1_VALUE}}", label: "{{STAT_1_LABEL}}", icon: Users },
-        { value: "{{STAT_2_VALUE}}", label: "{{STAT_2_LABEL}}", icon: MapPin },
-        { value: "{{STAT_3_VALUE}}", label: "{{STAT_3_LABEL}}", icon: Activity },
-        { value: "{{STAT_4_VALUE}}", label: "{{STAT_4_LABEL}}", icon: Trophy },
+        { value: "0", label: "Current Domain Rating", icon: Activity },
+        { value: "0", label: "Organic Keywords", icon: Search },
+        { value: "29", label: "Historical Backlinks", icon: TrendingUp },
+        { value: "100%", label: "Growth Potential", icon: Trophy },
     ],
 
     // -------------------------------------------------------------------------
@@ -114,29 +113,29 @@ export const config: TemplateConfig = {
     pillars: [
         {
             icon: Heart,
-            title: "{{PILLAR_1_TITLE}}",
-            description: "{{PILLAR_1_DESC}}",
+            title: "Community-Centered",
+            description: "A welcoming space where recovery meets connection, bringing together like-minded individuals in Encinitas.",
         },
         {
             icon: Sparkles,
-            title: "{{PILLAR_2_TITLE}}",
-            description: "{{PILLAR_2_DESC}}",
+            title: "Holistic Approach",
+            description: "Combining movement classes, recovery sessions, and wellness practices for complete mind-body transformation.",
         },
         {
             icon: TrendingUp,
-            title: "{{PILLAR_3_TITLE}}",
-            description: "{{PILLAR_3_DESC}}",
+            title: "Results-Driven",
+            description: "Evidence-based recovery methods and movement practices that deliver real, measurable results.",
         },
     ],
 
     // -------------------------------------------------------------------------
-    // KEY INSIGHTS (bullet points about the client)
+    // KEY INSIGHTS - SEO & DIGITAL OPPORTUNITY
     // -------------------------------------------------------------------------
     insights: [
-        { label: "{{INSIGHT_1_LABEL}}", text: "{{INSIGHT_1_TEXT}}" },
-        { label: "{{INSIGHT_2_LABEL}}", text: "{{INSIGHT_2_TEXT}}" },
-        { label: "{{INSIGHT_3_LABEL}}", text: "{{INSIGHT_3_TEXT}}" },
-        { label: "{{INSIGHT_4_LABEL}}", text: "{{INSIGHT_4_TEXT}}" },
+        { label: "SEO Gap", text: "Zero organic search visibility despite being an established Encinitas studio" },
+        { label: "Local Opportunity", text: "High search volume for 'recovery studio Encinitas' and related terms" },
+        { label: "Competitive Edge", text: "Modern website will outperform template-based competitor sites" },
+        { label: "Brand Potential", text: "Unique penguin branding creates memorable, shareable identity" },
     ],
 
     // -------------------------------------------------------------------------
@@ -144,24 +143,24 @@ export const config: TemplateConfig = {
     // -------------------------------------------------------------------------
     services: [
         {
-            name: "{{SERVICE_1_NAME}}",
-            description: "{{SERVICE_1_DESC}}",
+            name: "Recovery Classes",
+            description: "Guided recovery sessions for optimal restoration",
             image: "/placeholders/service-1.svg",
             tag: "Most Popular",
         },
         {
-            name: "{{SERVICE_2_NAME}}",
-            description: "{{SERVICE_2_DESC}}",
+            name: "Movement Classes",
+            description: "Dynamic movement practices for all levels",
             image: "/placeholders/service-2.svg",
         },
         {
-            name: "{{SERVICE_3_NAME}}",
-            description: "{{SERVICE_3_DESC}}",
+            name: "Private Sessions",
+            description: "One-on-one personalized training",
             image: "/placeholders/service-3.svg",
         },
         {
-            name: "{{SERVICE_4_NAME}}",
-            description: "{{SERVICE_4_DESC}}",
+            name: "Memberships",
+            description: "Flexible packages for regular visitors",
             image: "/placeholders/service-4.svg",
         },
     ],
@@ -171,23 +170,23 @@ export const config: TemplateConfig = {
     // -------------------------------------------------------------------------
     testimonials: [
         {
-            name: "{{TESTIMONIAL_1_NAME}}",
-            title: "{{TESTIMONIAL_1_TITLE}}",
+            name: "Community Member",
+            title: "Regular Attendee",
             image: "/placeholders/testimonial-1.svg",
         },
         {
-            name: "{{TESTIMONIAL_2_NAME}}",
-            title: "{{TESTIMONIAL_2_TITLE}}",
+            name: "Community Member",
+            title: "Recovery Enthusiast",
             image: "/placeholders/testimonial-2.svg",
         },
         {
-            name: "{{TESTIMONIAL_3_NAME}}",
-            title: "{{TESTIMONIAL_3_TITLE}}",
+            name: "Community Member",
+            title: "Movement Practitioner",
             image: "/placeholders/testimonial-3.svg",
         },
         {
-            name: "{{TESTIMONIAL_4_NAME}}",
-            title: "{{TESTIMONIAL_4_TITLE}}",
+            name: "Community Member",
+            title: "Wellness Advocate",
             image: "/placeholders/testimonial-4.svg",
         },
     ],
@@ -197,44 +196,32 @@ export const config: TemplateConfig = {
     // -------------------------------------------------------------------------
     locations: [
         {
-            name: "{{LOCATION_1_NAME}}",
-            address: "{{LOCATION_1_ADDRESS}}",
-            city: "{{LOCATION_1_CITY}}",
+            name: "Club House ENC",
+            address: "449 S. Coast Hwy 101",
+            city: "Encinitas, CA 92024",
             image: "/placeholders/location-1.svg",
-        },
-        {
-            name: "{{LOCATION_2_NAME}}",
-            address: "{{LOCATION_2_ADDRESS}}",
-            city: "{{LOCATION_2_CITY}}",
-            image: "/placeholders/location-2.svg",
-        },
-        {
-            name: "{{LOCATION_3_NAME}}",
-            address: "{{LOCATION_3_ADDRESS}}",
-            city: "{{LOCATION_3_CITY}}",
-            image: "/placeholders/location-3.svg",
         },
     ],
 
     // -------------------------------------------------------------------------
-    // INTEGRATION (e.g., MindBody, Acuity, etc.)
+    // INTEGRATION (not applicable for this project)
     // -------------------------------------------------------------------------
     integration: {
-        name: "{{INTEGRATION_NAME}}", // e.g., "MindBody", "Acuity", "Square"
+        name: "SEO",
     },
 
     // -------------------------------------------------------------------------
     // CALL-TO-ACTION
     // -------------------------------------------------------------------------
     cta: {
-        headline: "Let's Build {{CLIENT_NAME}}'s Digital Future",
-        subheadline: "Ready to elevate your online presence?",
+        headline: "Let's Build Club House ENC's Digital Future",
+        subheadline: "Ready to dominate local search and attract new members?",
     },
 
     // -------------------------------------------------------------------------
     // TECH BADGES (shown in Hero)
     // -------------------------------------------------------------------------
-    techBadges: ["NEXT.JS", "{{INTEGRATION_NAME}} API", "VERCEL"],
+    techBadges: ["NEXT.JS", "SEO OPTIMIZED", "VERCEL"],
 }
 
 // Helper function to get location count

@@ -38,7 +38,7 @@ export const CTA = () => {
 
                     {/* Contact buttons */}
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-                        <a href="mailto:hayden@comcreate.org">
+                        <a href="mailto:josh@comcreate.org">
                             <button className="group h-14 px-8 rounded-full bg-primary text-white font-bold overflow-hidden flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform">
                                 <Mail size={18} />
                                 Send Email
@@ -57,9 +57,9 @@ export const CTA = () => {
                     {/* Contact info */}
                     <div className="mb-12">
                         <p className="text-zinc-500 text-sm mb-1">Contact</p>
-                        <p className="text-white font-medium">Hayden Hansen</p>
-                        <a href="mailto:hayden@comcreate.org" className="text-primary hover:underline">
-                            hayden@comcreate.org
+                        <p className="text-white font-medium">Josh Nolan</p>
+                        <a href="mailto:josh@comcreate.org" className="text-primary hover:underline">
+                            josh@comcreate.org
                         </a>
                     </div>
 
