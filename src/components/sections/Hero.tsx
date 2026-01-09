@@ -1,7 +1,6 @@
 "use client"
 
-import { ArrowRight, ExternalLink } from "lucide-react"
-import Link from "next/link"
+import { ArrowRight } from "lucide-react"
 import { config } from "@/config/template.config"
 
 export const Hero = () => {
@@ -38,8 +37,8 @@ export const Hero = () => {
                         {config.hero.subheadline || `Elevating ${config.client.city}'s ${config.client.industry} Experience with a premium digital presence.`}
                     </p>
 
-                    {/* CTA Buttons */}
-                    <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    {/* CTA Button */}
+                    <div className="flex items-center justify-center">
                         <button
                             onClick={() => document.getElementById('proposal')?.scrollIntoView({ behavior: 'smooth' })}
                             className="group h-14 px-8 rounded-full bg-primary text-white font-bold overflow-hidden flex items-center gap-2 hover:scale-105 active:scale-95 transition-transform"
@@ -47,13 +46,6 @@ export const Hero = () => {
                             View Proposal
                             <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
                         </button>
-
-                        <Link href="/mockups/index.html" target="_blank">
-                            <button className="group h-14 px-8 rounded-full border border-white/20 text-white font-bold overflow-hidden flex items-center gap-2 hover:bg-white/5 hover:scale-105 active:scale-95 transition-all">
-                                See Mockups
-                                <ExternalLink size={16} className="transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                            </button>
-                        </Link>
                     </div>
 
                     {/* Trust badges */}
